@@ -7,14 +7,14 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "docs"),
   },
-  module: {
-    rules: [
-      {
-        test: /\.m?js$/,
-        exclude: /(node_modules)/,
-        use: ["babel-loader"],
-      },
-    ],
-  },
+  // module: {
+  //   rules: [
+  //     {
+  //       test: /\.m?js$/,
+  //       exclude: /(node_modules)/,
+  //       use: ["babel-loader"],
+  //     },
+  //   ],
+  // },
   plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
 };

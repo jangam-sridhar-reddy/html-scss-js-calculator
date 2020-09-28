@@ -10,6 +10,69 @@
     />
   </head>
   <body>
-    <h1>html calculator</h1>
+    <main class="calculator">
+      <div class="calculator__container">
+        <h1 class="calculator__heading">Html calculator</h1>
+        <div class="calculator__body">
+          <div class="calculator__output">0</div>
+          <div class="calculator__actions">
+            <ul class="calculator__list calculator__list--color-grey">
+              <li class="calculator__items" data-id="plus">+</li>
+              <li class="calculator__items" data-id="minus">-</li>
+              <li class="calculator__items" data-id="multi">x</li>
+              <li class="calculator__items" data-id="divide">/</li>
+            </ul>
+          </div>
+          <div class="calculator__inputs">
+            <div class="calculator__left">
+              <ul class="calculator__list calculator__list--color-white">
+                <li class="calculator__items">7</li>
+                <li class="calculator__items">8</li>
+                <li class="calculator__items">9</li>
+              </ul>
+              <ul class="calculator__list calculator__list--color-white">
+                <li class="calculator__items">4</li>
+                <li class="calculator__items">5</li>
+                <li class="calculator__items">6</li>
+              </ul>
+              <ul class="calculator__list calculator__list--color-white">
+                <li class="calculator__items">1</li>
+                <li class="calculator__items">2</li>
+                <li class="calculator__items">3</li>
+              </ul>
+
+              <ul class="calculator__list calculator__list--color-white">
+                <li class="calculator__items">0</li>
+                <li class="calculator__items" data-id="dot">.</li>
+                <li class="calculator__items" data-id="clear">AC</li>
+              </ul>
+            </div>
+            <ul class="calculator__list calculator__right">
+              <li class="calculator__items" data-id="equal">=</li>
+            </ul>
+            <!-- <div class="calculator__right">=</div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="calculator__container">
+        <div class="menuOutter">
+          <button id="openMenuButton">open Menu</button>
+          <ul id="openMenu" style="display: none">
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="calculator__container family">
+        <div id="grandParent">
+          <div id="parent">
+            <div id="child"></div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
